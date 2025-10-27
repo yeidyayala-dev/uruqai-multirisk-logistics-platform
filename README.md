@@ -80,7 +80,7 @@ make dash
 ---
 
 ## 👩‍💻 Contributors
-- Gilberto Gonzalez (Lead Developer)
+- Gilberto Gonzalez
 - XPRIZE Quantum Innovation Team
 
 ---
