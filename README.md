@@ -86,4 +86,4 @@ make dash
 ---
 
 ## 🧾 License
-MIT License © 2025 UruQAI Consortium
+© 2025 UruQAI Consortium
