@@ -1,0 +1,11 @@
+dataset:
+  url: "https://www.datos.gob.mx/dataset/3a1d4a71-4dad-4ae9-9eec-44de7fa8ebf3/resource/ddf38874-6243-4437-8f76-19f797cafa5c/download/estadisticasincendiosforestales2015-2024.csv"
+  local_file: "wildfire-data-pipeline/data/raw/incendios_forestales.csv"
+  encoding: "latin-1"
+
+paths:
+  raw: "wildfire-data-pipeline/data/raw/"
+  staging: "wildfire-data-pipeline/data/staging/"
+  curated: "wildfire-data-pipeline/data/curated/"
+  metadata: "wildfire-data-pipeline/metadata/metadata.json"
+  logs: "logs/pipeline.log"
