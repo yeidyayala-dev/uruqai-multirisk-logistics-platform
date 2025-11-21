@@ -22,8 +22,21 @@ def ensure_dir(path):
     os.makedirs(path, exist_ok=True)
 
 def log(msg):
+    # === Format Log ===
     timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    print(f"[LOG {timestamp}] {msg}")
+    formatted = f"[LOG {timestamp}] {msg}"
+
+    # === Ensure logs directory ===
+    log_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "logs")
+    os.makedirs(log_dir, exist_ok=True)
+
+    # === Save log ===
+    log_file = os.path.join(log_dir, "pipeline.log")
+    with open(log_file, "a", encoding="utf-8") as f:
+        f.write(formatted + "\n")
+
+    # === Print to console ===
+    print(formatted)
 
 def compute_hash(file_path):
     sha = hashlib.sha256()

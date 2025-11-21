@@ -3,7 +3,7 @@
     "url": "https://www.datos.gob.mx/dataset/3a1d4a71-4dad-4ae9-9eec-44de7fa8ebf3/resource/ddf38874-6243-4437-8f76-19f797cafa5c/download/estadisticasincendiosforestales2015-2024.csv",
     "file": "/wildfire-data-pipeline/data/raw/incendios_forestales.csv",
     "encoding": "latin-1",
-    "download_date": "2025-11-19T16:15:23.331330",
+    "download_date": "2025-11-19T18:25:10.338228",
     "sha256_hash": "c2a7f92a8a0717b8ebdcac517e171f756270fdcec1788317ef03edf9df464307",
     "qa_raw": {
         "shape": [
