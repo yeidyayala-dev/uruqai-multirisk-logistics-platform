@@ -61,7 +61,8 @@ def choose_input(source=None):
 
     if choice == "1":
         local_path = input("Enter local file path: ").strip()
-        LOCAL_FILE = local_path 
+        LOCAL_FILE = local_path.strip('"').strip("'").strip()
+        log(f"Using local file: {LOCAL_FILE}")
 
     elif choice == "2":
         url = input("Enter dataset URL: ").strip()

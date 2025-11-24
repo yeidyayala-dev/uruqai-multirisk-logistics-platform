@@ -1,0 +1,286 @@
+{
+    "source": "Local File",
+    "url": null,
+    "file": "C:\\Users\\Viviana\\Downloads\\estaciones_hidrometricas_sih.csv",
+    "encoding": "latin-1",
+    "download_date": "2025-11-23T21:16:45.104400",
+    "sha256_hash": "324d97b0c1a36c95c4f623e0fa1563a7a04e10d6e7ad560dc4d7f1d4bef3b17c",
+    "qa_raw": {
+        "shape": [
+            1189,
+            11
+        ],
+        "nulls": {
+            "clave": 0,
+            "nombre": 0,
+            "latitud": 0,
+            "longitud": 0,
+            "altitud": 0,
+            "estado": 0,
+            "municipio": 0,
+            "region_hidrologica": 25,
+            "cuenca": 835,
+            "fn_region_hidrologica": 26,
+            "estado_etq": 0
+        },
+        "duplicates": 0,
+        "negative_values": {
+            "latitud": 0,
+            "longitud": 1189,
+            "altitud": 2,
+            "fn_region_hidrologica": 0
+        },
+        "numeric_ranges": {
+            "count": {
+                "latitud": 1189.0,
+                "longitud": 1189.0,
+                "altitud": 1189.0,
+                "fn_region_hidrologica": 1163.0
+            },
+            "mean": {
+                "latitud": 20.98284413036165,
+                "longitud": -100.57934773927671,
+                "altitud": 772.3532380151388,
+                "fn_region_hidrologica": 19.14531384350817
+            },
+            "std": {
+                "latitud": 3.3220760291050686,
+                "longitud": 4.4702813661730385,
+                "altitud": 853.1062245328677,
+                "fn_region_hidrologica": 7.926319583175788
+            },
+            "min": {
+                "latitud": 14.683333,
+                "longitud": -116.905833,
+                "altitud": -2.0,
+                "fn_region_hidrologica": 0.0
+            },
+            "1%": {
+                "latitud": 15.215167,
+                "longitud": -110.93866696,
+                "altitud": 0.0,
+                "fn_region_hidrologica": 0.0
+            },
+            "5%": {
+                "latitud": 16.3085554,
+                "longitud": -108.2166668,
+                "altitud": 0.0,
+                "fn_region_hidrologica": 9.0
+            },
+            "50%": {
+                "latitud": 20.208333,
+                "longitud": -100.180833,
+                "altitud": 320.0,
+                "fn_region_hidrologica": 18.0
+            },
+            "95%": {
+                "latitud": 27.4160002,
+                "longitud": -92.68666700000001,
+                "altitud": 2325.0,
+                "fn_region_hidrologica": 30.0
+            },
+            "99%": {
+                "latitud": 30.04499999999996,
+                "longitud": -91.158333,
+                "altitud": 2584.0,
+                "fn_region_hidrologica": 36.0
+            },
+            "max": {
+                "latitud": 32.833333,
+                "longitud": -90.4,
+                "altitud": 2989.0,
+                "fn_region_hidrologica": 37.0
+            }
+        },
+        "categorical_top_values": {
+            "clave": {
+                "B24215": 2,
+                "B20049": 1,
+                "B20027": 1,
+                "B20026": 1,
+                "B20024": 1
+            },
+            "nombre": {
+                "SANTA ROSA": 4,
+                "LA VEGA": 4,
+                "VICENTE GUERRERO": 4,
+                "LA BOQUILLA": 3,
+                "LA CALERA": 3
+            },
+            "estado": {
+                "Jalisco": 118,
+                "MichoacÃ¡n de Ocampo": 112,
+                "MÃ©xico": 107,
+                "Chiapas": 102,
+                "Veracruz de Ignacio de la Llave": 73
+            },
+            "municipio": {
+                "Linares": 13,
+                "TecomÃ¡n": 11,
+                "Hidalgo": 11,
+                "Centro": 10,
+                "Sinaloa": 10
+            },
+            "region_hidrologica": {
+                "12": 277,
+                "26": 160,
+                "18": 113,
+                "30": 96,
+                "10": 64
+            },
+            "cuenca": {
+                "NaN": 835,
+                "Alto Lerma": 35,
+                "Valle de MÃ©xico": 31,
+                "Bajo PÃ¡nuco": 26,
+                "RÃ­o Papaloapan": 17
+            },
+            "estado_etq": {
+                "Jalisco": 118,
+                "MichoacÃ¡n": 112,
+                "Estado de MÃ©xico": 107,
+                "Chiapas": 102,
+                "Veracruz": 73
+            }
+        }
+    },
+    "qa_transformed": {
+        "shape": [
+            1189,
+            11
+        ],
+        "nulls": {
+            "clave": 0,
+            "nombre": 0,
+            "latitud": 0,
+            "longitud": 0,
+            "altitud": 0,
+            "estado": 0,
+            "municipio": 0,
+            "region_hidrologica": 25,
+            "cuenca": 835,
+            "fn_region_hidrologica": 26,
+            "estado_etq": 0
+        },
+        "duplicates": 0,
+        "negative_values": {
+            "latitud": 0,
+            "longitud": 1189,
+            "altitud": 2,
+            "fn_region_hidrologica": 0
+        },
+        "numeric_ranges": {
+            "count": {
+                "latitud": 1189.0,
+                "longitud": 1189.0,
+                "altitud": 1189.0,
+                "fn_region_hidrologica": 1163.0
+            },
+            "mean": {
+                "latitud": 20.98284413036165,
+                "longitud": -100.57934773927671,
+                "altitud": 772.3532380151388,
+                "fn_region_hidrologica": 19.14531384350817
+            },
+            "std": {
+                "latitud": 3.3220760291050686,
+                "longitud": 4.4702813661730385,
+                "altitud": 853.1062245328677,
+                "fn_region_hidrologica": 7.926319583175788
+            },
+            "min": {
+                "latitud": 14.683333,
+                "longitud": -116.905833,
+                "altitud": -2.0,
+                "fn_region_hidrologica": 0.0
+            },
+            "1%": {
+                "latitud": 15.215167,
+                "longitud": -110.93866696,
+                "altitud": 0.0,
+                "fn_region_hidrologica": 0.0
+            },
+            "5%": {
+                "latitud": 16.3085554,
+                "longitud": -108.2166668,
+                "altitud": 0.0,
+                "fn_region_hidrologica": 9.0
+            },
+            "50%": {
+                "latitud": 20.208333,
+                "longitud": -100.180833,
+                "altitud": 320.0,
+                "fn_region_hidrologica": 18.0
+            },
+            "95%": {
+                "latitud": 27.4160002,
+                "longitud": -92.68666700000001,
+                "altitud": 2325.0,
+                "fn_region_hidrologica": 30.0
+            },
+            "99%": {
+                "latitud": 30.04499999999996,
+                "longitud": -91.158333,
+                "altitud": 2584.0,
+                "fn_region_hidrologica": 36.0
+            },
+            "max": {
+                "latitud": 32.833333,
+                "longitud": -90.4,
+                "altitud": 2989.0,
+                "fn_region_hidrologica": 37.0
+            }
+        },
+        "categorical_top_values": {
+            "clave": {
+                "B24215": 2,
+                "B20049": 1,
+                "B20027": 1,
+                "B20026": 1,
+                "B20024": 1
+            },
+            "nombre": {
+                "SANTA ROSA": 4,
+                "LA VEGA": 4,
+                "VICENTE GUERRERO": 4,
+                "LA BOQUILLA": 3,
+                "LA CALERA": 3
+            },
+            "estado": {
+                "Jalisco": 118,
+                "MichoacÃ¡n de Ocampo": 112,
+                "MÃ©xico": 107,
+                "Chiapas": 102,
+                "Veracruz de Ignacio de la Llave": 73
+            },
+            "municipio": {
+                "Linares": 13,
+                "TecomÃ¡n": 11,
+                "Hidalgo": 11,
+                "Centro": 10,
+                "Sinaloa": 10
+            },
+            "region_hidrologica": {
+                "12": 277,
+                "26": 160,
+                "18": 113,
+                "30": 96,
+                "10": 64
+            },
+            "cuenca": {
+                "NaN": 835,
+                "Alto Lerma": 35,
+                "Valle de MÃ©xico": 31,
+                "Bajo PÃ¡nuco": 26,
+                "RÃ­o Papaloapan": 17
+            },
+            "estado_etq": {
+                "Jalisco": 118,
+                "MichoacÃ¡n": 112,
+                "Estado de MÃ©xico": 107,
+                "Chiapas": 102,
+                "Veracruz": 73
+            }
+        }
+    }
+}
