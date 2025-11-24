@@ -9,7 +9,7 @@ Run:
 
 # PIPELINE STRUCUCTURE
 ```
-wildfires_pipeline/
+General_pipeline/
 │
 ├── config/
 │   └── config.yaml
