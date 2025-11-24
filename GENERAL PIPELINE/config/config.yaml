@@ -1,0 +1,20 @@
+# config/config.yaml
+
+ paths:
+  raw: "data/raw/downloaded_data.csv"
+  staging: "data/staging/"
+  curated: "data/curated/"
+  metadata: "metadata/metadata.json"
+  logs: "logs/pipeline.log"
+
+# Naming convention
+ filename:
+  default_base_name: "processed_dataset" 
+
+# Generic transformation/QA settings
+ transformation:
+  # Example: Columns that might be critical to check after transformation
+  critical_columns:
+    - "id"
+    - "value"
+    - "date"

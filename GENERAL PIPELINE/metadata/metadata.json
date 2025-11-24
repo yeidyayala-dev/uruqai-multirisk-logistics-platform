@@ -1,0 +1,366 @@
+{
+    "source": "https://www.datos.gob.mx/dataset/ea2fb2bc-3974-4025-b814-a8f3e4443b67/resource/2c135da3-118e-43f3-be63-39c5c3928b61/download/estaciones_climatologicas_sih2.csv",
+    "url": "https://www.datos.gob.mx/dataset/ea2fb2bc-3974-4025-b814-a8f3e4443b67/resource/2c135da3-118e-43f3-be63-39c5c3928b61/download/estaciones_climatologicas_sih2.csv",
+    "file": "data/raw/downloaded_data.csv",
+    "encoding": "latin-1",
+    "download_date": "2025-11-23T20:54:05.387765",
+    "sha256_hash": "0ce90fff6a31479a7632723a03311c12ef53362624d46e563af81fcbb810a947",
+    "qa_raw": {
+        "shape": [
+            7499,
+            15
+        ],
+        "nulls": {
+            "numero": 0,
+            "clave": 0,
+            "nombre": 0,
+            "latitud": 0,
+            "longitud": 0,
+            "altitud": 0,
+            "estado": 0,
+            "municipio": 0,
+            "id_cuenca_de_disponibilidad": 0,
+            "cuenca_de_disponibilidad": 0,
+            "num_region_hidrologica": 0,
+            "region_hidrologica": 0,
+            "fn_id_cuenca_de_disponibilidad": 44,
+            "fn_num_region_hidrologica": 44,
+            "estado_etq": 0
+        },
+        "duplicates": 0,
+        "negative_values": {
+            "numero": 0,
+            "latitud": 0,
+            "longitud": 7499,
+            "altitud": 1,
+            "fn_id_cuenca_de_disponibilidad": 0,
+            "fn_num_region_hidrologica": 0
+        },
+        "numeric_ranges": {
+            "count": {
+                "numero": 7499.0,
+                "latitud": 7499.0,
+                "longitud": 7499.0,
+                "altitud": 7499.0,
+                "fn_id_cuenca_de_disponibilidad": 7455.0,
+                "fn_num_region_hidrologica": 7455.0
+            },
+            "mean": {
+                "numero": 3750.0,
+                "latitud": 21.710662079477267,
+                "longitud": -100.76481227403654,
+                "altitud": 1043.2623016402188,
+                "fn_id_cuenca_de_disponibilidad": 384.83876592890675,
+                "fn_num_region_hidrologica": 20.58900067069081
+            },
+            "std": {
+                "numero": 2164.919167082226,
+                "latitud": 5.044649810020029,
+                "longitud": 5.728970919396165,
+                "altitud": 913.6696782838385,
+                "fn_id_cuenca_de_disponibilidad": 213.35925700845794,
+                "fn_num_region_hidrologica": 8.85085479156217
+            },
+            "min": {
+                "numero": 1.0,
+                "latitud": 14.617778,
+                "longitud": -118.278056,
+                "altitud": -2.0,
+                "fn_id_cuenca_de_disponibilidad": 1.0,
+                "fn_num_region_hidrologica": 1.0
+            },
+            "1%": {
+                "numero": 75.98,
+                "latitud": 15.36498334,
+                "longitud": -115.93151121999999,
+                "altitud": 0.0,
+                "fn_id_cuenca_de_disponibilidad": 11.0,
+                "fn_num_region_hidrologica": 1.0
+            },
+            "5%": {
+                "numero": 375.90000000000003,
+                "latitud": 16.6,
+                "longitud": -110.88783289999999,
+                "altitud": 1.900000000000034,
+                "fn_id_cuenca_de_disponibilidad": 91.0,
+                "fn_num_region_hidrologica": 8.0
+            },
+            "50%": {
+                "numero": 3750.0,
+                "latitud": 20.438056,
+                "longitud": -99.94,
+                "altitud": 936.0,
+                "fn_id_cuenca_de_disponibilidad": 366.0,
+                "fn_num_region_hidrologica": 22.0
+            },
+            "95%": {
+                "numero": 7124.099999999999,
+                "latitud": 29.5283335,
+                "longitud": -91.5366392,
+                "altitud": 2530.0,
+                "fn_id_cuenca_de_disponibilidad": 735.0,
+                "fn_num_region_hidrologica": 36.0
+            },
+            "99%": {
+                "numero": 7424.0199999999995,
+                "latitud": 32.10003888,
+                "longitud": -88.34138366,
+                "altitud": 2847.0599999999986,
+                "fn_id_cuenca_de_disponibilidad": 755.0,
+                "fn_num_region_hidrologica": 37.0
+            },
+            "max": {
+                "numero": 7499.0,
+                "latitud": 215.383333,
+                "longitud": -10.387222,
+                "altitud": 4283.0,
+                "fn_id_cuenca_de_disponibilidad": 757.0,
+                "fn_num_region_hidrologica": 37.0
+            }
+        },
+        "categorical_top_values": {
+            "clave": {
+                "C03002": 2,
+                "C08243": 2,
+                "C08099": 2,
+                "C08061": 2,
+                "C08219": 2
+            },
+            "nombre": {
+                "Santa Rosa": 13,
+                "San Isidro": 9,
+                "San Felipe": 9,
+                "Santo Domingo": 8,
+                "San Pedro": 8
+            },
+            "estado": {
+                "Veracruz": 524,
+                "MÃ©xico": 444,
+                "Oaxaca": 432,
+                "Chiapas": 411,
+                "Jalisco": 405
+            },
+            "municipio": {
+                "Ensenada": 93,
+                "La Paz": 70,
+                "ComondÃº": 48,
+                "MulegÃ©": 44,
+                "Acapulco de JuÃ¡rez": 42
+            },
+            "id_cuenca_de_disponibilidad": {
+                "698": 201,
+                "271": 181,
+                "555": 146,
+                "277": 122,
+                "570": 100
+            },
+            "cuenca_de_disponibilidad": {
+                "YucatÃ¡n": 201,
+                "RÃ­o Amacuzac": 181,
+                "Ciudad de MÃ©xico": 146,
+                "RÃ­o Medio Balsas": 122,
+                "RÃ­o Tecolutla": 100
+            },
+            "num_region_hidrologica": {
+                "12": 1034,
+                "26": 854,
+                "18": 843,
+                "28": 487,
+                "24": 478
+            },
+            "region_hidrologica": {
+                "Lerma Santiago": 1034,
+                "PÃ¡nuco": 854,
+                "Balsas": 843,
+                "Papaloapan": 487,
+                "Bravo Conchos": 478
+            },
+            "estado_etq": {
+                "Veracruz": 524,
+                "Estado de MÃ©xico": 444,
+                "Oaxaca": 432,
+                "Chiapas": 411,
+                "Jalisco": 405
+            }
+        }
+    },
+    "qa_transformed": {
+        "shape": [
+            7499,
+            15
+        ],
+        "nulls": {
+            "numero": 0,
+            "clave": 0,
+            "nombre": 0,
+            "latitud": 0,
+            "longitud": 0,
+            "altitud": 0,
+            "estado": 0,
+            "municipio": 0,
+            "id_cuenca_de_disponibilidad": 0,
+            "cuenca_de_disponibilidad": 0,
+            "num_region_hidrologica": 0,
+            "region_hidrologica": 0,
+            "fn_id_cuenca_de_disponibilidad": 44,
+            "fn_num_region_hidrologica": 44,
+            "estado_etq": 0
+        },
+        "duplicates": 0,
+        "negative_values": {
+            "numero": 0,
+            "latitud": 0,
+            "longitud": 7499,
+            "altitud": 1,
+            "fn_id_cuenca_de_disponibilidad": 0,
+            "fn_num_region_hidrologica": 0
+        },
+        "numeric_ranges": {
+            "count": {
+                "numero": 7499.0,
+                "latitud": 7499.0,
+                "longitud": 7499.0,
+                "altitud": 7499.0,
+                "fn_id_cuenca_de_disponibilidad": 7455.0,
+                "fn_num_region_hidrologica": 7455.0
+            },
+            "mean": {
+                "numero": 3750.0,
+                "latitud": 21.710662079477267,
+                "longitud": -100.76481227403654,
+                "altitud": 1043.2623016402188,
+                "fn_id_cuenca_de_disponibilidad": 384.83876592890675,
+                "fn_num_region_hidrologica": 20.58900067069081
+            },
+            "std": {
+                "numero": 2164.919167082226,
+                "latitud": 5.044649810020029,
+                "longitud": 5.728970919396165,
+                "altitud": 913.6696782838385,
+                "fn_id_cuenca_de_disponibilidad": 213.35925700845794,
+                "fn_num_region_hidrologica": 8.85085479156217
+            },
+            "min": {
+                "numero": 1.0,
+                "latitud": 14.617778,
+                "longitud": -118.278056,
+                "altitud": -2.0,
+                "fn_id_cuenca_de_disponibilidad": 1.0,
+                "fn_num_region_hidrologica": 1.0
+            },
+            "1%": {
+                "numero": 75.98,
+                "latitud": 15.36498334,
+                "longitud": -115.93151121999999,
+                "altitud": 0.0,
+                "fn_id_cuenca_de_disponibilidad": 11.0,
+                "fn_num_region_hidrologica": 1.0
+            },
+            "5%": {
+                "numero": 375.90000000000003,
+                "latitud": 16.6,
+                "longitud": -110.88783289999999,
+                "altitud": 1.900000000000034,
+                "fn_id_cuenca_de_disponibilidad": 91.0,
+                "fn_num_region_hidrologica": 8.0
+            },
+            "50%": {
+                "numero": 3750.0,
+                "latitud": 20.438056,
+                "longitud": -99.94,
+                "altitud": 936.0,
+                "fn_id_cuenca_de_disponibilidad": 366.0,
+                "fn_num_region_hidrologica": 22.0
+            },
+            "95%": {
+                "numero": 7124.099999999999,
+                "latitud": 29.5283335,
+                "longitud": -91.5366392,
+                "altitud": 2530.0,
+                "fn_id_cuenca_de_disponibilidad": 735.0,
+                "fn_num_region_hidrologica": 36.0
+            },
+            "99%": {
+                "numero": 7424.0199999999995,
+                "latitud": 32.10003888,
+                "longitud": -88.34138366,
+                "altitud": 2847.0599999999986,
+                "fn_id_cuenca_de_disponibilidad": 755.0,
+                "fn_num_region_hidrologica": 37.0
+            },
+            "max": {
+                "numero": 7499.0,
+                "latitud": 215.383333,
+                "longitud": -10.387222,
+                "altitud": 4283.0,
+                "fn_id_cuenca_de_disponibilidad": 757.0,
+                "fn_num_region_hidrologica": 37.0
+            }
+        },
+        "categorical_top_values": {
+            "clave": {
+                "C03002": 2,
+                "C08243": 2,
+                "C08099": 2,
+                "C08061": 2,
+                "C08219": 2
+            },
+            "nombre": {
+                "Santa Rosa": 13,
+                "San Isidro": 9,
+                "San Felipe": 9,
+                "Santo Domingo": 8,
+                "San Pedro": 8
+            },
+            "estado": {
+                "Veracruz": 524,
+                "MÃ©xico": 444,
+                "Oaxaca": 432,
+                "Chiapas": 411,
+                "Jalisco": 405
+            },
+            "municipio": {
+                "Ensenada": 93,
+                "La Paz": 70,
+                "ComondÃº": 48,
+                "MulegÃ©": 44,
+                "Acapulco de JuÃ¡rez": 42
+            },
+            "id_cuenca_de_disponibilidad": {
+                "698": 201,
+                "271": 181,
+                "555": 146,
+                "277": 122,
+                "570": 100
+            },
+            "cuenca_de_disponibilidad": {
+                "YucatÃ¡n": 201,
+                "RÃ­o Amacuzac": 181,
+                "Ciudad de MÃ©xico": 146,
+                "RÃ­o Medio Balsas": 122,
+                "RÃ­o Tecolutla": 100
+            },
+            "num_region_hidrologica": {
+                "12": 1034,
+                "26": 854,
+                "18": 843,
+                "28": 487,
+                "24": 478
+            },
+            "region_hidrologica": {
+                "Lerma Santiago": 1034,
+                "PÃ¡nuco": 854,
+                "Balsas": 843,
+                "Papaloapan": 487,
+                "Bravo Conchos": 478
+            },
+            "estado_etq": {
+                "Veracruz": 524,
+                "Estado de MÃ©xico": 444,
+                "Oaxaca": 432,
+                "Chiapas": 411,
+                "Jalisco": 405
+            }
+        }
+    }
+}
