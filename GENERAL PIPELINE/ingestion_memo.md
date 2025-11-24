@@ -1,29 +1,11 @@
 
-## 📄INGESTION MEMO – Wildfire Data Pipeline
+## 📄INGESTION MEMO 
 
-Project: Wildfire Analytics & Risk Insights
-Dataset: Forest Fires 2015–2024 (Mexico)
-Version: 1.0
+Project: UruQAI 
+Process: Data Preprocessing 
+Environment: Python Package (Run Python 3.x environment)
 
-
-## 🔍 1. Dataset Overview
-
-| Aspect              | Detail                                                  |
-| ------------------- | ------------------------------------------------------- |
-| Source              | National Forestry Commission (CONAFOR)                  |
-| Platform            | Datos Abiertos México                                   |
-| Dataset URL         | `https://www.datos.gob.mx/dataset/incendios_forestales` |
-| Data Type           | Tabular CSV (event-level)                               |
-| Temporal Coverage   | 2015–2024                                               |
-| Geographic Coverage | Mexico (state and municipal level)                      |
-| Update Frequency    | Not specified – depends on CONAFOR                      |
-| Language            | Spanish                                                 |
-| License             | Public / Open Government Data                           |
-
-The dataset contains statistics on forest fires, including causes, affected area, location, and vegetation type. It is critical for risk analysis, prevention, ecological impact assessment, and predictive modeling.
-
-
-## 🏗 2. Ingestion Strategy
+## 🏗 1. Ingestion Strategy
 
 The ingestion strategy follows a modular ETL approach:
 
@@ -37,10 +19,13 @@ The ingestion strategy follows a modular ETL approach:
       -  File size
       -  Source & license
 
-**IMPORTANT NOTE**: The URL used in this case, takes the link that directly downloads the file. This means the link attached to the “DOWNLOAD” Button on the page (see image below) It can be changed manually for another database from the same resource as needed. 
-https://www.datos.gob.mx/dataset/incendios_forestales/resource/ddf38874-6243-4437-8f76-19f797cafa5c 
+**IMPORTANT NOTES**: 
 
-<img width="975" height="510" alt="image" src="https://github.com/user-attachments/assets/5513e108-0131-4f16-acec-f3a39265d39d" />
+- The URL used in this case, takes the link that directly downloads the file. This means the link attached to the “DOWNLOAD”    Button on the page (see image below) It can be changed manually for another database from the same resource as needed. 
+
+- If there is no URL containing any dataset, a LOCAL FILE may be used
+
+
 
 ✔ **Transform**
 
@@ -84,34 +69,14 @@ wildfires_pipeline/
 └── config/    ← YAML configuration
 ```
 
+## Other running environments 
 
-## ⚠️ 5. Risks & Mitigation
-
-| Risk                        | Impact           | Mitigation                                   |
-| --------------------------- | ---------------- | -------------------------------------------- |
-| URL change                  | Pipeline failure | Use local fallback + alert                   |
-| Outdated dataset            | Model accuracy   | Quarterly manual monitoring                  |
-| Outliers / anomalous values | Bias in models   | Apply statistical/environmental rules        |
-| Geographic inconsistencies  | Analysis errors  | Validate against INEGI catalog               |
-| Unclear license             | Legal risk       | Maintain source attribution and public usage |
-
-
-## 🔮 6. Next Dataset Candidates
-
-| Source   | Dataset                  | Use                            |
-| -------- | ------------------------ | ------------------------------ |
-| CONABIO  | Vegetation types         | Terrain vulnerability analysis |
-| SEMARNAT | Emissions from fires     | Environmental impact           |
-| SMN      | Meteorological variables | Risk prediction                |
-| INEGI    | Municipal boundaries     | Geospatial validation          |
-
-
-## 🎯 7. Value Proposition
-
-This pipeline enables:
-
-- Historical and regional analysis of forest fires
-- Predictive risk modeling
-- Assessment of forest damage by vegetation type
-- Resource prioritization for emergency response
-- Integration with climate and emissions data
+- Google Colab
+- Jupyter Notebooks
+- PyCharm
+- Anaconda (anaconda3)
+- Command Line
+- GitHub Codespaces
+- Google Cloud Vertex Notebooks
+- VS (Visual Studio) -----> Interpreter:  Python 3.11.5 anaconda3/python.exe
+                                          Python anaconda3/envs/BigData1/python.exe

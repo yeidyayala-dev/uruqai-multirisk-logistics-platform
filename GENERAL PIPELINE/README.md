@@ -3,12 +3,12 @@
 End‑to‑end pipeline (raw → staging → curated).
 
 # Wildfires pipeline
-Pipeline to process data for Wildfires from CONAFOR (raw → staging → curated).
+Pipeline to process ETL on databases extracted via URL or LOCAL FILES (raw → staging → curated).
 
 Run:
-1. python scripts/download.py --config Wildfires/config.yaml
-2. python scripts/transform.py --config Wildfires/config.yaml
-3. python scripts/qa.py --config Wildfires/config.yaml
+1. python scripts/download.py 
+2. python scripts/transform.py 
+3. python scripts/qa.py --config 
 
 # PIPELINE STRUCUCTURE
 
