@@ -11,7 +11,7 @@ Run:
 3. python scripts/qa.py --config Wildfires/config.yaml
 
 # PIPELINE STRUCUCTURE
-
+```
 wildfires_pipeline/
 │
 ├── config/
@@ -36,3 +36,4 @@ wildfires_pipeline/
 │   └── pipeline.log
 │
 └── pipeline.py
+```
