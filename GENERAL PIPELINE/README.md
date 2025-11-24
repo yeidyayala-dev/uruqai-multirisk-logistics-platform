@@ -1,8 +1,5 @@
-# Wildfire Data Pipeline
 
-End‑to‑end pipeline (raw → staging → curated).
-
-# Wildfires pipeline
+# GENERAL PIPELINE
 Pipeline to process ETL on databases extracted via URL or LOCAL FILES (raw → staging → curated).
 
 Run:
@@ -11,7 +8,7 @@ Run:
 3. python scripts/qa.py --config 
 
 # PIPELINE STRUCUCTURE
-
+```
 wildfires_pipeline/
 │
 ├── config/
@@ -36,3 +33,4 @@ wildfires_pipeline/
 │   └── pipeline.log
 │
 └── pipeline.py
+```
