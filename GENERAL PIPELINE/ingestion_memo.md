@@ -7,6 +7,16 @@ Environment: Python Package (Run Python 3.x environment)
 
 ## 🏗 1. Ingestion Strategy
 
+pipeline can ingest:
+
+ - CSV / Excel / JSON / XML / Parquet
+ - SQLite / MySQL / PostgreSQL / SQL Server
+ - MongoDB
+ - APIs
+ - Any messy or complex delimiter
+ - Any nested JSON
+ - Any dataset shape
+
 The ingestion strategy follows a modular ETL approach:
 
 ✔ **Extract**
@@ -25,7 +35,6 @@ The ingestion strategy follows a modular ETL approach:
 - If there is no URL containing any dataset, a LOCAL FILE may be used
 
 
-
 ✔ **Transform**
 
 - Column cleaning and normalization
@@ -42,7 +51,7 @@ The ingestion strategy follows a modular ETL approach:
 - Recommended final format: Parquet (compressed, columnar)
 
 
-## 🔒 3. Quality Controls (QA)
+## 🔒 2. Quality Controls (QA)
 
 | Control             | Purpose                    | Action                                            |
 | ------------------- | -------------------------- | ------------------------------------------------- |
@@ -54,7 +63,7 @@ The ingestion strategy follows a modular ETL approach:
 | Geospatial Validity | Validate location          | Cross-check against INEGI state/municipal catalog |
 
 
-## 📦 4. File Storage Architecture
+## 📦 3. File Storage Architecture
 ```
 pipeline/
 |
@@ -77,5 +86,6 @@ pipeline/
 - Command Line
 - GitHub Codespaces
 - Google Cloud Vertex Notebooks
-- VS (Visual Studio) -----> Interpreter:  Python 3.11.5 anaconda3/python.exe
-                                          Python anaconda3/envs/BigData1/python.exe
+- VS (Visual Studio) -----> Interpreter:  
+                                          - Python 3.11.5 anaconda3/python.exe
+                                          - Python anaconda3/envs/BigData1/python.exe

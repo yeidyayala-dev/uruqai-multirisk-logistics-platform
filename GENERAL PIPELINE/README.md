@@ -2,23 +2,29 @@
 # GENERAL PIPELINE
 Pipeline to process ETL on databases extracted via URL or LOCAL FILES (raw → staging → curated).
 
-✅ UNIVERSAL
-
-pipeline can ingest:
- - CSV / Excel / JSON / XML / Parquet
- - SQLite / MySQL / PostgreSQL / SQL Server
- - MongoDB
- - APIs
- - Any messy or complex delimiter
- - Any nested JSON
- - Any dataset shape
-
-✅ PRODUCTION-GRADE
+# MAIN FEATURES 
+```
 ✅ SAFE & ROBUST
 ✅ Well-logged
 ✅ QA-oriented
-✅ Compatible with your new universal extractor
+✅ Compatible with universal extractor
 ✅ Fully aligned with professional ETL architecture
+```
+# OTHER FEATURES
+
+✔ Error handling with graceful failure
+✔ Summary of extract/transform/load steps
+✔ Column + row validation
+✔ Metadata enriched with:
+                - row count
+                - column count
+                - dtypes
+                - pipeline runtime
+                - QA summary
+                - file hash
+                - stage & curated file paths
+
+✔ Fully compatible with your universal extract, transform, load modules
 
 Run:
 1. python scripts/download.py 
