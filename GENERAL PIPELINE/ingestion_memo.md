@@ -76,6 +76,18 @@ pipeline/
 ├── logs/      ← Execution logs and errors
 └── config/    ← YAML configuration
 ```
+## OUTPUTS
+
+After running the pipeline, 3 new files will be created and stored as follows:
+
+- Raw database -----------> data/raw:     "downloaded_data.csv"
+- Transformed database ---> data/staging: "staging_clean.csv"
+- curated-----------------> data/curated: "curated_final"
+
+# Important:
+
+- Use the "curated_final" version for analytics
+- move file (copy/paste), change name and storage it into other folders as needed.
 
 ## Other running environments 
 
