@@ -21,8 +21,7 @@ The ingestion strategy follows a modular ETL approach:
 
 **IMPORTANT NOTES**: 
 
-- The URL used in this case, takes the link that directly downloads the file. This means the link attached to the “DOWNLOAD”    Button on the page (see image below) It can be changed manually for another database from the same resource as needed. 
-
+- The URL must download directly a dataset. 
 - If there is no URL containing any dataset, a LOCAL FILE may be used
 
 
