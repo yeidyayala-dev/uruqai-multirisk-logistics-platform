@@ -11,7 +11,7 @@ Pipeline to process ETL on databases extracted via URL or LOCAL FILES (raw → s
 ✅ Fully aligned with professional ETL architecture
 ```
 # OTHER FEATURES
-
+```
 ✔ Error handling with graceful failure
 ✔ Summary of extract/transform/load steps
 ✔ Column + row validation
@@ -25,7 +25,7 @@ Pipeline to process ETL on databases extracted via URL or LOCAL FILES (raw → s
                 - stage & curated file paths
 
 ✔ Fully compatible with your universal extract, transform, load modules
-
+```
 Run:
 1. python scripts/download.py 
 2. python scripts/transform.py 
@@ -58,3 +58,15 @@ General_pipeline/
 │
 └── pipeline.py
 ```
+## Other running environments 
+
+- Google Colab
+- Jupyter Notebooks
+- PyCharm
+- Anaconda (anaconda3)
+- Command Line
+- GitHub Codespaces
+- Google Cloud Vertex Notebooks
+- VS (Visual Studio) -----> Interpreter:  
+                                          - Python 3.11.5 anaconda3/python.exe
+                                          - Python anaconda3/envs/BigData1/python.exe
