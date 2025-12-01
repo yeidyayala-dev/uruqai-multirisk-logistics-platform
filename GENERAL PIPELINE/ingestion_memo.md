@@ -57,7 +57,7 @@ The ingestion strategy follows a modular ETL approach:
 
 ## 📦 4. File Storage Architecture
 ```
-wildfires_pipeline/
+pipeline/
 |
 ├── data/
 |   ├── raw/    ← Original downloaded CSV

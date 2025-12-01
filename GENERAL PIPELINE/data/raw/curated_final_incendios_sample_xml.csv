@@ -1,0 +1,6 @@
+id,date,country,region,latitude,longitude,cause,area_burned_ha,status
+1,2025-11-25,Bolivia,La Paz,-16.5,-68.15,Lightning,12.5,Contained
+2,2025-11-26,Bolivia,Santa Cruz,-17.8,-63.2,Human,45.3,Active
+3,2025-11-26,Chile,Valparaíso,-33.047,-71.612,Unknown,5.0,Under Investigation
+4,2025-11-27,Argentina,Córdoba,-31.42,-64.188,Human,80.7,Contained
+5,2025-11-28,Peru,Cusco,-13.532,-71.967,Lightning,22.1,Active

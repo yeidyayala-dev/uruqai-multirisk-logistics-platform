@@ -16,33 +16,52 @@ from etl.utils import log
 def qa_checks(df):
     log("Executing QA...")
 
-    # Separate types
-    numeric_cols = df.select_dtypes(include=["int64", "float64"]).columns
-    categorical_cols = df.select_dtypes(include=["object"]).columns
+    results = {}
 
-    results = {
-        "shape": df.shape,
+# ===========================
+# NULLS
+# ===========================
+    results["nulls"] = df.isnull().sum().to_dict()
 
-        # NULLS
-        "nulls": df.isnull().sum().to_dict(),
+# ===========================
+# DUPLICATES
+# ===========================
+    results["duplicates"] = int(df.duplicated().sum())
 
-        # DUPLICATES
-        "duplicates": int(df.duplicated().sum()),
+# ===========================
+# NUMERIC COLUMNS
+# ===========================
+    numeric_cols = df.select_dtypes(include=["number"]).columns.tolist()
 
-        # NUMERIC VALUES
-        "negative_values": (df[numeric_cols] < 0).sum().to_dict(),
+    if numeric_cols:
+        # Negative values
+        results["negative_values"] = (df[numeric_cols] < 0).sum().to_dict()
 
-        # RANGES
-        "numeric_ranges": df[numeric_cols].describe(
-            percentiles=[0.01, 0.05, 0.95, 0.99]
-        ).T.to_dict(),
+        # Ranges
+        try:
+            desc = df[numeric_cols].describe(percentiles=[0.01, 0.05, 0.95, 0.99]).T
+            results["numeric_ranges"] = desc.to_dict()
+        except Exception as e:
+            results["numeric_ranges"] = {"error": str(e)}
+    else:
+        # No numeric data present
+        results["negative_values"] = {}
+        results["numeric_ranges"] = {}
 
-        # FREQS FOR CATEGORICAL 
-        "categorical_top_values": {
-            col: df[col].value_counts(dropna=False).head(5).to_dict()
-            for col in categorical_cols
-        }
-    }
+    # ===========================
+    # CATEGORICAL COLUMNS
+    # ===========================
+    categorical_cols = df.select_dtypes(include=["object", "category"]).columns.tolist()
 
-    log("QA completed.")
+    cat_summary = {}
+    for col in categorical_cols:
+        try:
+            top_values = df[col].value_counts(dropna=False).head(5).to_dict()
+            cat_summary[col] = top_values
+        except Exception:
+            cat_summary[col] = "Could not compute frequencies"
+
+    results["categorical_top_values"] = cat_summary
+
+    log("QA completed successfully.")
     return results
